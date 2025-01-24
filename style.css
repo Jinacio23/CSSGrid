@@ -1,32 +1,63 @@
-body {
+.card1 .grid-container {
     display: grid;
-    grid-template-areas: 
-    "header header header"
-    "aside main main"
-    "footer footer footer";
-    grid-gap: 1rem;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto 100vh auto
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 10px;
 }
 
-.o-header{
-    background-color: red;
+.item {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+}
+
+.card2 .grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "menu main main"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: 50px 1fr 30px;
+    gap: 10px;
+}
+
+.header {
     grid-area: header;
-    padding: 1.5rem;
+    background-color: #343a40;
+    color: white;
 }
 
-.o-aside{
-    background-color: blue;
-    grid-area: aside;
+.menu {
+    grid-area: menu;
+    background-color: #ffc107;
 }
 
-.o-main{
-    background-color: green;
+.main {
     grid-area: main;
+    background-color: #20c997;
 }
 
-.o-footer{
-    background-color: brown;
+.footer {
     grid-area: footer;
-    padding: 1rem;
+    background-color: #6f42c1;
+    color: white;
+}
+
+.card3 .grid-container {
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr;
+    grid-template-rows: 50px 150px;
+    gap: 5px;
+}
+
+.item {
+
+    background-color: #17a2b8;
+    text-align: center;
+    color: white;
+    line-height: 50px;
 }
